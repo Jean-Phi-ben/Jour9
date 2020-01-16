@@ -13,3 +13,5 @@ puts journalists.count {|handle| handle[1].match(/[[:upper:]]/)}
 #puts journalists.count {|handle| handle.match(/[[:underscore:]]/)}
 #Trie la liste de handle par ordre alphabétique.
 puts journalists.sort
+#Quels sont les 50 handles les plus courts de ce array ?
+puts journalists.sort_by {|handle| handle[1].match(/[[:upper:]]/)}
